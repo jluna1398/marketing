@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import seaborn as sns
-
+import altair as alt
 st.title(
     "Clustering Analysis"
 
@@ -20,5 +20,9 @@ st.write("""
 
 st.dataframe(mall_data.head())
 
-a = sns.histplot(mall_data["Income"])
-st.pyplot(a)
+a = alt.Chart(mall_data).mark_bar().encode(
+    alt.X("Income", bin=True),
+    y='count()'
+)
+
+st.altair_chart(a)
