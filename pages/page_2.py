@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title(
-    "Page 2"
+    "Clustering Analysis"
 
 )
-st.write("jhgsad fiojphwe fpkjwepfo hjswedwe -pov")
+st.image('iamges/c.png')
