@@ -4,4 +4,4 @@ st.title(
     "Clustering Analysis"
 
 )
-st.image('iamges/c.png')
+st.image('images/c.png')
