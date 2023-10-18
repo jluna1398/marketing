@@ -2,13 +2,8 @@ import streamlit as st
 import seaborn as sns
 import sklearn as sk
 import numpy as np
-st.title("Jose Luna")
 import seaborn as sns
 sns.set_theme(style="darkgrid")
-
-# Load an example dataset with long-form da
-
-
 
 def main_page():
     st.title("Data Science For Marketing")
@@ -29,4 +24,3 @@ page_names_to_funcs = {
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
