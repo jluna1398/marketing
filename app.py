@@ -6,7 +6,6 @@ st.title("Jose Luna")
 import seaborn as sns
 sns.set_theme(style="darkgrid")
 
-# Load an example dataset with long-form data
-fmri = sns.load_dataset("fmri")
-st.dataframe(
-    fmri.head())
+# Load an example dataset with long-form da
+st.title("Data Science For Marketing")
+st.image('images/mk.png')
