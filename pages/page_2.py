@@ -1,5 +1,7 @@
-import streamlit
+import streamlit as st
 
-streamlit.title(
+st.title(
     "Page 2"
+
 )
+st.write("jhgsad fiojphwe fpkjwepfo hjswedwe -pov")
