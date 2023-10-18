@@ -25,4 +25,4 @@ a = alt.Chart(mall_data).mark_bar().encode(
     y='count()'
 )
 
-st.altair_chart(a)
+st.altair_chart(a, use_container_width=True)
