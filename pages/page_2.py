@@ -13,12 +13,9 @@ mall_data.rename({'Annual Income (k$)':'Income', \
               'Spending Score (1-100)':'Spend_score'}, axis=1, \
              inplace=True)
 
-st.write("""
+st.write(mall_data.head())
 
-#### Data Exploration
-""")
 
-st.dataframe(mall_data.head())
 
 a = alt.Chart(mall_data).mark_bar().encode(
     alt.X("Income", bin=True),
