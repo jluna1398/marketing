@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import seaborn as sns
 import altair as alt
+import matplotlib.pyplot as plt
 st.title(
     "Clustering Analysis"
 
@@ -24,7 +25,7 @@ st.title(
 
 # st.altair_chart(a, use_container_width=True)
 
-import plotly.express as px
+
 
 df = pd.DataFrame(dict(
     r=[1, 5, 2, 2, 3],
