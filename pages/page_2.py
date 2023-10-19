@@ -81,4 +81,4 @@ ac = ax.plot(angles, values, linewidth=1, linestyle='solid')
 ax.fill(angles, values, 'b', alpha=0.1)
 
 # Show the graph
-st.pyplot(ac)
+st.pyplot(plt.show())
