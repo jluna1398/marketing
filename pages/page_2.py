@@ -8,7 +8,7 @@ st.title(
 )
 # st.image('images/c.png')
 
-mall_data = pd.read_csv('../data/Mall_Customers.csv')
+mall_data = pd.read_csv('data/Mall_Customers.csv')
 mall_data.rename({'Annual Income (k$)':'Income', \
               'Spending Score (1-100)':'Spend_score'}, axis=1, \
              inplace=True)
