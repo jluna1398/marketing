@@ -75,10 +75,10 @@ plt.yticks([10,20,30], ["10","20","30"], color="grey", size=7)
 plt.ylim(0,40)
 
 # Plot data
-ax.plot(angles, values, linewidth=1, linestyle='solid')
+ac = ax.plot(angles, values, linewidth=1, linestyle='solid')
 
 # Fill area
 ax.fill(angles, values, 'b', alpha=0.1)
 
 # Show the graph
-st.pyplot(ax)
+st.pyplot(ac)
