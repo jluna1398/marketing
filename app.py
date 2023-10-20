@@ -1,31 +1,25 @@
-import streamlit as st
-import seaborn as sns
-import sklearn as sk
-import numpy as np
-import seaborn as sns
-sns.set_theme(style="darkgrid")
+from st_pages import Page, Section, add_page_title, show_pages
 
-# Load an example dataset with long-form da
+"## Declaring the pages in your app:"
 
+show_pages(
+    [
+        Page("example_app/streamlit_app_sections.py", "Home", "🏠"),
+        # Can use :<icon-name>: or the actual icon
+        Page("example_app/example_one.py", "Example One", ":books:"),
+        # Since this is a Section, all the pages underneath it will be indented
+        # The section itself will look like a normal page, but it won't be clickable
+        Section(name="Cool apps", icon=":pig:"),
+        # The pages appear in the order you pass them
+        Page("example_app/example_four.py", "Example Four", "📖"),
+        Page("example_app/example_two.py", "Example Two", "✏️"),
+        Section(name="Other apps", icon=":horse:"),
+        # Will use the default icon and name based on the filename if you don't
+        # pass them
+        Page("example_app/example_three.py"),
+        # You can also pass in_section=False to a page to make it un-indented
+        Page("example_app/example_five.py", "Example Five", "🧰", in_section=False),
+    ]
+)
 
-
-def main_page():
-    st.title("Data Science for Marketing")
-
-
-def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
-
-def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
-
-page_names_to_funcs = {
-    "Main Page": main_page,
-    "Page 2": page2,
-    "Page 3": page3,
-}
-
-# selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-# page_names_to_funcs[selected_page]()
+add_page_title()  # Optional method to add title and icon to current page
